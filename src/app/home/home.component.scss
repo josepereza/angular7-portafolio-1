@@ -37,4 +37,7 @@
 .project-card {
   margin: 0.5em;
   width: 80%;
+  &:hover {
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+  }
 }
