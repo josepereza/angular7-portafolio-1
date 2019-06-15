@@ -18,17 +18,8 @@
             </mat-card-title>
             <mat-card-content>
                 <ul>
-                    <li>
-                        <p>HTML</p>
-                    </li>
-                    <li>
-                        <p>CSS</p>
-                    </li>
-                    <li>
-                        <p>Angular</p>
-                    </li>
-                    <li>
-                        <p>pyGTK</p>
+                    <li *ngFor="let skill of frontendSkills">
+                        <p>{{ skill }}</p>
                     </li>
                 </ul>
             </mat-card-content>
@@ -39,23 +30,8 @@
             </mat-card-title>
             <mat-card-content>
                 <ul>
-                    <li>
-                        <p>Java</p>
-                    </li>
-                    <li>
-                        <p>Spring Boot</p>
-                    </li>
-                    <li>
-                        <p>Spring Security</p>
-                    </li>
-                    <li>
-                        <p>JDBC</p>
-                    </li>
-                    <li>
-                        <p>Hibernate ORM</p>
-                    </li>
-                    <li>
-                        <p>Python</p>
+                    <li *ngFor="let skill of backendSkills">
+                        <p>{{ skill }}</p>
                     </li>
                 </ul>
             </mat-card-content>
@@ -67,17 +43,8 @@
             </mat-card-title>
             <mat-card-content>
                 <ul>
-                    <li>
-                        <p>PostgreSQL</p>
-                    </li>
-                    <li>
-                        <p>SQLite</p>
-                    </li>
-                    <li>
-                        <p>PostGIS</p>
-                    </li>
-                    <li>
-                        <p>pgAdmin</p>
+                    <li *ngFor="let skill of databaseSkills">
+                        <p>{{ skill }}</p>
                     </li>
                 </ul>
             </mat-card-content>
@@ -89,35 +56,8 @@
             </mat-card-title>
             <mat-card-content>
                 <ul>
-                    <li>
-                        <p>RESTful Web Services</p>
-                    </li>
-                    <li>
-                        <p>Geographic Information System</p>
-                    </li>
-                    <li>
-                        <p>Linux</p>
-                    </li>
-                    <li>
-                        <p>Bash Scripting</p>
-                    </li>
-                    <li>
-                        <p>Version Control (Git/GitHub/Bitbucket)</p>
-                    </li>
-                    <li>
-                        <p>Apache Tomcat</p>
-                    </li>
-                    <li>
-                        <p>JSON</p>
-                    </li>
-                    <li>
-                        <p>XML</p>
-                    </li>
-                    <li>
-                        <p>Regular Expressions</p>
-                    </li>
-                    <li>
-                        <p>Vim</p>
+                    <li *ngFor="let skill of otherSkills">
+                        <p>{{ skill }}</p>
                     </li>
                 </ul>
             </mat-card-content>
