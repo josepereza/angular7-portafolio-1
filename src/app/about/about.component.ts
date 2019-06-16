@@ -7,19 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  about: object = {
+  about: any = {
     "name": "Muhammad Shehriyar Qureshi",
     "status": "Self-Taught Software Developer"
   };
 
-  frontendSkills: Array<string> = [
+  frontendSkills: any = [
     "Angular",
     "HTML",
     "CSS",
     "pyGTK"
   ];
 
-  backendSkills: Array<String> = [
+  backendSkills: any = [
     "Java",
     "Spring Boot",
     "Spring Security",
@@ -28,14 +28,14 @@ export class AboutComponent implements OnInit {
     "Hibernate ORM",
   ];
 
-  databaseSkills: Array<String> = [
+  databaseSkills: any = [
     "PostgreSQL",
     "SQLite",
     "PostGIS",
     "pgAdmin"
   ];
 
-  otherSkills: Array<String> = [
+  otherSkills: any = [
     "RESTful Web Services",
     "Geographic Information System",
     "Linux",
@@ -48,7 +48,7 @@ export class AboutComponent implements OnInit {
     "Vim"
   ];
 
-  workExperience: Array<object> = [
+  workExperience: any = [
     {
       "name": "TPL Maps (Private) Ltd",
       "role": "Software Engineer",
@@ -69,7 +69,7 @@ export class AboutComponent implements OnInit {
     }
   ];
 
-  laptopSetup: object = {
+  laptopSetup: any = {
     "operatingSystem": "btw I use Arch Linux",
     "textEditor": "Neovim",
     "IDE": "Netbeans for Java, VSCode for Angular",

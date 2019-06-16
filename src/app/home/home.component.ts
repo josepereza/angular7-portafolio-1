@@ -8,7 +8,7 @@ import { AboutComponent } from '../about/about.component';
 })
 export class HomeComponent implements OnInit {
 
-  projects: Array<object> = [
+  projects: any = [
     {
       "name": "historia",
       "type": "Open Source",
@@ -42,7 +42,7 @@ export class HomeComponent implements OnInit {
     }
   ];
 
-  constructor(private about: AboutComponent) { }
+  constructor(public about: AboutComponent) { }
 
   ngOnInit() {
   }

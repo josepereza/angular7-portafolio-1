@@ -8,14 +8,14 @@ import { AboutComponent } from '../about/about.component';
 })
 export class ContactComponent implements OnInit {
 
-  links: object = {
+  links: any = {
     "github": "https://github.com/ShehriyarQureshi",
     "medium": "https://medium.com/@Shehriyar.Qureshi",
     "linkedin": "https://www.linkedin.com/in/sshehriyar/",
     "email": "mailto:SShehriyar266@gmail.com",
   }
 
-  constructor(private about: AboutComponent) { }
+  constructor(public about: AboutComponent) { }
 
   ngOnInit() {
   }
