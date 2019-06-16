@@ -51,7 +51,7 @@ export class AboutComponent implements OnInit {
   workExperience: any = [
     {
       "name": "TPL Maps (Private) Ltd",
-      "role": "Software Engineer",
+      "role": "Full Stack Software Engineer",
       "date": "April 2019 - Present",
       "website": "https://tplmaps.com"
     },
