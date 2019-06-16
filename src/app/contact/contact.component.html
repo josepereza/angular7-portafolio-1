@@ -8,10 +8,10 @@
     <h2>Muhammad Shehriyar Qureshi</h2>
   </mat-card-title>
   <mat-card-subtitle>
-    <h3>Software Engineer @ <a href="https://tplmaps.com">TPL Maps</a></h3>
-    <a href="https://github.com/ShehriyarQureshi" class="fa fa-github"></a>
-    <a href="https://medium.com/@Shehriyar.Qureshi" class="fa fa-medium"></a>
-    <a href="https://www.linkedin.com/in/sshehriyar/" class="fa fa-linkedin"></a>
-    <a href="mailto:SShehriyar266@gmail.com" class="fa fa-envelope"></a>
+    <h3>{{ about.workExperience[0].role }} @ <a href="{{ about.workExperience[0].website }}">{{ about.workExperience[0].name }}</a></h3>
+    <a href="{{ links.github }}" class="fa fa-github"></a>
+    <a href="{{ links.medium }}" class="fa fa-medium"></a>
+    <a href="{{ links.linkedin }}" class="fa fa-linkedin"></a>
+    <a href="{{ links.email }}" class="fa fa-envelope"></a>
   </mat-card-subtitle>
 </mat-card>

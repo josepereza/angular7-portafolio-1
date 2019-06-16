@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AboutComponent } from '../about/about.component';
 
 @Component({
   selector: 'app-home',
@@ -7,21 +8,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  projects: Array<object> = [
+    {
+      "name": "historia",
+      "type": "Open Source",
+      "description": `A python program that uses python's built-in sqlite3
+      module to implement support for temporal tables in SQLite`,
+      "link": "https://www.github.com/ShehriyarQureshi/historia"
+    },
+    {
+      "name": "Tuition Manager",
+      "type": "Open Source",
+      "image": "assets/images/tuition-manager.png",
+      "description": `This was my first ever big programming project. I started
+      learning to code in Python and I developed this project to get an
+      understanding of programming basics and how I/O and stuff works`,
+      "link": "https://www.github.com/ShehriyarQureshi/tuition-manager"
+    },
+    {
+      "name": "employeeManager",
+      "type": "Open Source",
+      "image": "assets/images/employeeManager.png",
+      "description": `My first Java program that uses JSF, Hibernate & Spring
+      Security. Not proud of it except those Pokemon`,
+      "link": "https://www.github.com/ShehriyarQureshi/employeeManager"
+
+    },
+    {
+      "name": "Mobile Connect Profile",
+      "type": "Open Source",
+      "description": `Designed & Developed the base for GSMA Mobile Connect Profile prototype`,
+      "link": "https://www.github.com/ShehriyarQureshi/mobile-connect-profile"
+    }
+  ];
+
+  constructor(private about: AboutComponent) { }
 
   ngOnInit() {
   }
 
-  goToLink(param: String): void {
-    console.log(param);
-    if (param == "tuition-manager") {
-    window.open("https://www.github.com/ShehriyarQureshi/tuition-manager");
-    } else if (param == "employee-manager") {
-    window.open("https://www.github.com/ShehriyarQureshi/employeemanager");
-    } else if (param == "mobile-connect-profile") {
-    window.open("https://link.medium.com/fQWJhKOsgX");
-    } else if (param == "historia") {
-    window.open("https://www.github.com/ShehriyarQureshi/historia");
-    }
+  goToLink(link: string): void {
+    window.open(link);
   }
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AboutComponent } from '../about/about.component';
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  links: object = {
+    "github": "https://github.com/ShehriyarQureshi",
+    "medium": "https://medium.com/@Shehriyar.Qureshi",
+    "linkedin": "https://www.linkedin.com/in/sshehriyar/",
+    "email": "mailto:SShehriyar266@gmail.com",
+  }
+
+  constructor(private about: AboutComponent) { }
 
   ngOnInit() {
   }

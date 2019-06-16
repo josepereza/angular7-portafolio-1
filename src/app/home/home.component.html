@@ -1,13 +1,13 @@
 <mat-card class="greeting-card mat-elevation-z5">
     <mat-card-title>
-        <h1>السَّلَامُ عَلَيْكُمْ</h1>
+        <h2>السَّلَامُ عَلَيْكُمْ</h2>
     </mat-card-title>
 </mat-card>
 
 <mat-card class="simple-card mat-elevation-z5">
     <mat-card-title>
         <h2>whoami</h2>
-        <p><b>Muhammad Shehriyar Qureshi</b>, a <b>Self-Taught Software Developer</b></p>
+        <p><b>{{ about.about.name }}</b>, a <b>{{ about.about.status }}</b></p>
     </mat-card-title>
 </mat-card>
 
@@ -18,60 +18,16 @@
 
     <div class="projects-container">
 
-        <mat-card class="project-card mat-elevation-z5" (click)="goToLink('tuition-manager')">
+        <mat-card class="project-card mat-elevation-z5" *ngFor="let project of projects" (click)="goToLink(project.link)">
             <mat-card-title>
-                <h3>Tuition Manager</h3>
+                <h3>{{ project.name }}</h3>
             </mat-card-title>
             <mat-card-subtitle>
-                <h3>Open Source</h3>
+                <h3>{{ project.type }}</h3>
             </mat-card-subtitle>
-            <img mat-card-image src="assets/images/tuition-manager.png" alt="Tuition Manager Image">
+            <img mat-card-image src="{{ project.image }}" alt="">
             <mat-card-content>
-                <p>This was my first ever <b>big?</b> programming project.
-                    I started learning to code in Python and I developed this project
-                    to get an understanding of programming basics and how I/O and stuff
-                    works.</p>
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card class="project-card mat-elevation-z5" (click)="goToLink('employee-manager')">
-            <mat-card-title>
-                <h3>employeeManager</h3>
-            </mat-card-title>
-            <mat-card-subtitle>
-                <h3>PTCL</h3>
-            </mat-card-subtitle>
-            <img mat-card-image src="assets/images/employeeManager.png" alt="employeeManager Image">
-            <mat-card-content>
-                <p>This was my first demo project to learn Java. It's really really
-                    bad but I still have it up for memories.</p>
-            </mat-card-content>
-        </mat-card>
-
-
-        <mat-card class="project-card mat-elevation-z5" (click)="goToLink('mobile-connect-profile')">
-            <mat-card-title>
-                <h3>Mobile Connect Profile</h3>
-            </mat-card-title>
-            <mat-card-subtitle>
-                <h3>Ufone</h3>
-            </mat-card-subtitle>
-            <mat-card-content>
-                <p>Base Implementation of GSMA Mobile Connect Profile I designed &
-                    developed to be integrated into Ufone's Middleware.</p>
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card class="project-card mat-elevation-z5" (click)="goToLink('historia')">
-            <mat-card-title>
-                <h3>historia</h3>
-            </mat-card-title>
-            <mat-card-subtitle>
-                <h3>Open Source</h3>
-            </mat-card-subtitle>
-            <mat-card-content>
-                <p>A Python module which implements temporal tables using python's
-                    built-in sqlite3 module.</p>
+                <p>{{ project.description }}</p>
             </mat-card-content>
         </mat-card>
     </div>

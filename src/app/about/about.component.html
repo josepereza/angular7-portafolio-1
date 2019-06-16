@@ -1,7 +1,7 @@
 <mat-card class="my-story mat-elevation-z5">
     <mat-card-title>
         <h2>whoami</h2>
-        <p><b>Muhammad Shehriyar Qureshi</b>, a <b>Self-Taught Software Developer</b>.</p>
+        <p><b>{{ about.name }}</b>, a <b>{{ about.status }}</b>.</p>
     </mat-card-title>
 </mat-card>
 
@@ -70,29 +70,18 @@
     </mat-card-title>
 
     <div class="experience-container">
-        <mat-card class="experience-card mat-elevation-z5">
+        <mat-card class="experience-card mat-elevation-z5" *ngFor="let company of workExperience">
             <mat-card-title>
-                <h3>TPL Maps Pvt Ltd</h3>
-                <p>Software Engineer</p>
+                <h3>{{ company.name }}</h3>
+                <p>{{ company.role }}</p>
             </mat-card-title>
             <mat-card-subtitle>
-                <p>April 2019 - Present</p>
+                <p>{{ company.date }}</p>
             </mat-card-subtitle>
             <mat-card-content>
+                <p>{{ company.description }}</p>
             </mat-card-content>
         </mat-card>
-
-        <mat-card class="experience-card mat-elevation-z5">
-                <mat-card-title>
-                    <h3>Ufone</h3>
-                    <p>Software Developer Intern</p>
-                </mat-card-title>
-                <mat-card-subtitle>
-                    <p>December 2018 - February 2019</p>
-                </mat-card-subtitle>
-                <mat-card-content>
-                </mat-card-content>
-            </mat-card>
     </div>
 </mat-card>
 
@@ -104,9 +93,9 @@
         <p>In case you were wondering</p>
     </mat-card-subtitle>
     <mat-card-content>
-        <!-- hack for now, should use flex? -->
-        <p><b>Operating System:</b> "btw I use Arch Linux"</p>
-        <p><b>Text Editor/IDE I love:</b> Neovim for everything other than Java (Netbeans) and Angular (VSCode)</p>
-        <p><b>Desktop Environment:</b> Gnome 3</p>
+        <p><b>Operating System:</b> {{ laptopSetup.operatingSystem }}</p>
+        <p><b>Text Editor I love:</b> {{ laptopSetup.textEditor }}</p>
+        <p><b>IDE's I love:</b> {{ laptopSetup.IDE }}</p>
+        <p><b>Desktop Environment:</b> {{ laptopSetup.desktopEnvironment }}</p>
     </mat-card-content>
 </mat-card>

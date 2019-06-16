@@ -25,7 +25,7 @@ import { MatCardModule } from '@angular/material';
     AppRoutingModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [AboutComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
