@@ -53,19 +53,22 @@ export class AboutComponent implements OnInit {
       "name": "TPL Maps (Private) Ltd",
       "role": "Full Stack Software Engineer",
       "date": "April 2019 - Present",
-      "website": "https://tplmaps.com"
+      "website": "https://tplmaps.com",
+      "image": "assets/images/tplmaps_logo.png"
     },
     {
       "name": "Ufone",
       "role": "Software Developer Intern",
       "date": "December 2018 - February 2019",
-      "website": "https://www.ufone.com"
+      "website": "https://www.ufone.com",
+      "image": "assets/images/ufone_logo.jpg"
     },
     {
       "name": "PTCL",
       "role": "Software Developer Intern",
       "date": "September 2018 - November 2018",
-      "website": "https://ptcl.com.pk"
+      "website": "https://ptcl.com.pk",
+      "image": "assets/images/ptcl_logo.png"
     }
   ];
 
