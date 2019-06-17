@@ -16,6 +16,7 @@ export class AboutComponent implements OnInit {
     "Angular",
     "HTML",
     "CSS",
+    "TypeScript",
     "pyGTK"
   ];
 
