@@ -14,7 +14,8 @@ export class HomeComponent implements OnInit {
       "type": "Open Source",
       "description": `A python program that uses python's built-in sqlite3
       module to implement support for temporal tables in SQLite`,
-      "link": "https://www.github.com/ShehriyarQureshi/historia"
+      "link": "https://www.github.com/ShehriyarQureshi/historia",
+      "image": "assets/images/temporal-table.png"
     },
     {
       "name": "Tuition Manager",
@@ -38,7 +39,8 @@ export class HomeComponent implements OnInit {
       "name": "Mobile Connect Profile",
       "type": "Open Source",
       "description": `Designed & Developed the base for GSMA Mobile Connect Profile prototype`,
-      "link": "https://www.github.com/ShehriyarQureshi/mobile-connect-profile"
+      "link": "https://www.github.com/ShehriyarQureshi/mobile-connect-profile",
+      "image": "assets/images/gsma-mobile-connect.jpg"
     }
   ];
 
