@@ -31,7 +31,7 @@ export class AboutComponent implements OnInit {
 
   databaseSkills: any = [
     "PostgreSQL",
-    "SQLite",
+    "SQLite3",
     "PostGIS",
     "pgAdmin"
   ];
@@ -39,6 +39,7 @@ export class AboutComponent implements OnInit {
   otherSkills: any = [
     "RESTful Web Services",
     "Geographic Information System",
+    "Leaflet",
     "Linux",
     "Bash Scripting",
     "Version Control (Git/GitHub/Bitbucket)",
@@ -46,7 +47,7 @@ export class AboutComponent implements OnInit {
     "JSON",
     "XML",
     "Regular Expressions",
-    "Vim"
+    "Vim/Neovim"
   ];
 
   workExperience: any = [
