@@ -76,7 +76,7 @@ export class AboutComponent implements OnInit {
   laptopSetup: any = {
     "operatingSystem": "btw I use Arch Linux",
     "textEditor": "Neovim",
-    "IDE": "Netbeans for Java, VSCode for Angular",
+    "IDE": "Netbeans for Java, VS Code for Angular",
     "desktopEnvironment": "Gnome 3"
   }
 
