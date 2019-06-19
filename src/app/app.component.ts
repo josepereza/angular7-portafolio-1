@@ -13,10 +13,6 @@ export class AppComponent {
     this.setTitle();
   }
 
-  // ngOnInit() {
-  //   this.setTitle();
-  // }
-
   public setTitle(): void {
     this.titleService.setTitle(this.title);
   }
