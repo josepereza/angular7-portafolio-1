@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<div class="text-right top-nav">
+  <button class="btn btn-outline-primary" routerLink="/">Go Back</button>
+</div>
 <mat-card class="contact-card mat-elevation-z5">
   <div class="contact-image">
     <img src="assets/images/profile_picture.jpg" class="contact-image" alt="Profile Picture">
@@ -8,10 +10,13 @@
     <h2>{{ about.about.name }}</h2>
   </mat-card-title>
   <mat-card-subtitle>
-    <h3>{{ about.workExperience[0].role }} @ <a href="{{ about.workExperience[0].website }}">{{ about.workExperience[0].name }}</a></h3>
-    <a href="{{ links.github }}" class="fa fa-github"></a>
-    <a href="{{ links.medium }}" class="fa fa-medium"></a>
-    <a href="{{ links.linkedin }}" class="fa fa-linkedin"></a>
-    <a href="{{ links.email }}" class="fa fa-envelope"></a>
+    <h3>{{ about.workExperience[0].role }} @ <a
+        href="{{ about.workExperience[0].website }}">{{ about.workExperience[0].name }}</a></h3>
+    <div style="margin-top: 3%">
+      <a href="{{ links.github }}" class="fa fa-github"></a>
+      <a href="{{ links.medium }}" class="fa fa-medium"></a>
+      <a href="{{ links.linkedin }}" class="fa fa-linkedin"></a>
+      <a href="{{ links.email }}" class="fa fa-envelope"></a>
+    </div>
   </mat-card-subtitle>
 </mat-card>

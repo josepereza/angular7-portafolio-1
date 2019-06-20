@@ -1,3 +1,8 @@
+.introduction {
+  background-color: rgb(159, 0, 190);
+  color: white;
+}
+
 .greeting-card {
   max-width: 30%;
   margin: 4px;
@@ -61,4 +66,71 @@
   &:hover {
     box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
   }
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.skill-card {
+  margin: 0.5em;
+  width: 80%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  @media screen and (max-width: 800px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.my-story {
+  max-width: 90%;
+  margin: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+.my-work-experience {
+  max-width: 90%;
+  margin: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.experience-card {
+  margin: 0.5em;
+  width: 80%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  @media screen and (max-width: 800px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.home-setup-card {
+  max-width: 90%;
+  margin: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
