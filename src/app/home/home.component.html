@@ -1,6 +1,6 @@
 <div class="top-row">
-    <div class="text-right">
-        <button class="btn btn-outline-primary" style="margin-top: 5%; margin-right: 15%" routerLink="/contact">Say
+    <div class="contact-button">
+        <button class="btn btn-outline-primary button-responsive" style="margin-top: 5%;" routerLink="/contact">Say
             Hi</button>
     </div>
 </div>
@@ -12,12 +12,13 @@
 
 <div class="introduction" style="z-index: 0">
     <div class="text-center" style="margin-top: 5%; padding-top: 5%; padding-bottom: 5%">
-        <p style="font-size: 25px">I'm <b>{{ about.about.name }}</b></p>
-        <p style="font-size: 20px">{{ about.about.introduction }}</p>
+        <p style="font-size: 30px">I'm <b>{{ about.about.name }}</b></p>
+        <p style="font-size: 20px;margin-left: 15%;margin-right: 15%; margin-bottom: 16%">{{ about.about.introduction }}
+        </p>
     </div>
 </div>
 
-<div class="projects" style="z-index: 1; margin-top: -5%">
+<div class="projects">
     <mat-card class="project mat-elevation-z5">
         <mat-card-title>
             <h2>Projects</h2>
@@ -28,14 +29,14 @@
             <mat-card class="project-card mat-elevation-z5" *ngFor="let project of projects"
                 (click)="goToLink(project.link)">
                 <mat-card-title>
-                    <h3>{{ project.name }}</h3>
+                    <p class="heading-responsive">{{ project.name }}</p>
                 </mat-card-title>
                 <mat-card-subtitle>
                     <h3>{{ project.type }}</h3>
                 </mat-card-subtitle>
                 <img mat-card-image src="{{ project.image }}" alt="">
                 <mat-card-content>
-                    <p>{{ project.description }}</p>
+                    <p style="font-size: 20px">{{ project.description }}</p>
                 </mat-card-content>
             </mat-card>
         </div>
@@ -53,7 +54,7 @@
                     <h2>Front-End Skills</h2>
                 </mat-card-title>
                 <mat-card-content>
-                    <p *ngFor="let skill of about.frontendSkills">{{ skill }}</p>
+                    <p class="skills" *ngFor="let skill of about.frontendSkills">{{ skill }}</p>
                 </mat-card-content>
             </mat-card>
             <mat-card class="skill-card mat-elevation-z5">
@@ -61,7 +62,7 @@
                     <h2>Back-End Skills</h2>
                 </mat-card-title>
                 <mat-card-content>
-                    <p *ngFor="let skill of about.backendSkills">{{ skill }}</p>
+                    <p class="skills" *ngFor="let skill of about.backendSkills">{{ skill }}</p>
                 </mat-card-content>
             </mat-card>
 
@@ -70,7 +71,7 @@
                     <h2>Database Skills</h2>
                 </mat-card-title>
                 <mat-card-content>
-                    <p *ngFor="let skill of about.databaseSkills">{{ skill }}</p>
+                    <p class="skills" *ngFor="let skill of about.databaseSkills">{{ skill }}</p>
                 </mat-card-content>
             </mat-card>
 
@@ -79,7 +80,7 @@
                     <h2>Other Skills</h2>
                 </mat-card-title>
                 <mat-card-content>
-                    <p *ngFor="let skill of about.otherSkills">{{ skill }}</p>
+                    <p class="skills" *ngFor="let skill of about.otherSkills">{{ skill }}</p>
                 </mat-card-content>
             </mat-card>
         </div>
