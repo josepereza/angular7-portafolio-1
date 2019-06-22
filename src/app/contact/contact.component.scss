@@ -64,6 +64,7 @@
 
 .top-nav {
   text-align: right;
+  padding-top: 0px;
   padding-right: 0%;
   @media screen and (max-width: 800px) {
   text-align: center;
@@ -72,6 +73,10 @@
 
 .button-responsive {
   margin-right: 15%;
+  margin-top: 5%;
+  border-radius: 30px;
+  width: 5%;
+  height: 35%;
   @media screen and (max-width: 800px) {
     margin-right: auto;
   }
