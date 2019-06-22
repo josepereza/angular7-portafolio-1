@@ -176,3 +176,35 @@
   margin-top: 3%;
   margin-bottom: 3%;
 }
+
+.experience-card-content {
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  .work-image-container {
+    width: 50%;
+    height: 100%;
+
+    @media screen and (max-width: 800px) {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .work-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px
+  }
+  @media screen and (max-width: 800px) {
+  }
+}
+
+.work-description {
+  padding-left: 10%;
+  padding-right: 10%;
+}
