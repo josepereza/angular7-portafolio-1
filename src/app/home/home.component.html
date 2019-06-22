@@ -11,12 +11,107 @@
 </div>
 
 <div class="introduction" style="z-index: 0">
-    <div class="text-center" style="margin-top: 5%; padding-top: 5%; padding-bottom: 5%;margin-left: 2%; margin-right: 2%">
+    <div class="text-center"
+        style="margin-top: 5%; padding-top: 5%; padding-bottom: 5%;margin-left: 2%; margin-right: 2%">
         <p style="font-size: 30px">I'm<br><b>{{ about.about.name }}</b></p>
         <p style="font-size: 20px;margin-left: 15%;margin-right: 15%; margin-bottom: 16%">{{ about.about.introduction }}
         </p>
     </div>
 </div>
+
+<mat-card class="my-story mat-elevation-z5" style="z-index: 1; margin-top: -15%">
+    <mat-card-title>
+        <h2>Skills</h2>
+    </mat-card-title>
+
+
+    <div class="skills-container">
+        <mat-card class="skill-card mat-elevation-z5">
+            <mat-card-title>
+                <h2>Front-End Skills</h2>
+            </mat-card-title>
+            <mat-card-content>
+                <p class="skills" *ngFor="let skill of about.frontendSkills">{{ skill }}</p>
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="skill-card mat-elevation-z5">
+            <mat-card-title>
+                <h2>Back-End Skills</h2>
+            </mat-card-title>
+            <mat-card-content>
+                <p class="skills" *ngFor="let skill of about.backendSkills">{{ skill }}</p>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="skill-card mat-elevation-z5">
+            <mat-card-title>
+                <h2>Database Skills</h2>
+            </mat-card-title>
+            <mat-card-content>
+                <p class="skills" *ngFor="let skill of about.databaseSkills">{{ skill }}</p>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="skill-card mat-elevation-z5">
+            <mat-card-title>
+                <h2>Other Skills</h2>
+            </mat-card-title>
+            <mat-card-content>
+                <p class="skills" *ngFor="let skill of about.otherSkills">{{ skill }}</p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</mat-card>
+
+
+
+<div class="introduction">
+    <div class="text-center" style="margin-top: 3%">
+        <h2 class="heading" style="padding-top: 3%">Work Experience</h2>
+    </div>
+    <div class="text-center" style="z-index: 0">
+        <p style="padding-top: 5%; padding-bottom: 16%; font-size: 25px">{{ about.about.workPreference }}</p>
+    </div>
+</div>
+
+<mat-card class="experience-container d-flex flex-column mat-elevation-z5" style="z-index: 1; margin-top: -10%">
+    <div *ngFor="let experience of about.workExperience" class="d-flex flex-column">
+        <mat-card class="experience-card mat-elevation-z5">
+            <mat-card-content>
+                <div class="d-flex flex-row">
+                    <div style="width: 50%; height: 100%">
+                        <img src="{{ experience.workImage }}" alt=""
+                            style="width: 100%; height: 100%; border-radius: 10px">
+                    </div>
+                    <div class="text-center" style="margin-right: auto; margin-left: auto; width: 70%">
+                        <h2>{{ experience.role }}</h2>
+                        <img src="{{ experience.image }}" alt="">
+                        <p style="font-size: 20px"><b>{{ experience.name }}</b></p>
+                        <p><i>{{ experience.date }}</i></p>
+                        <p style="padding-left: 10%;padding-right: 10%">{{ experience.description }}</p>
+                        <p>Technologies:</p>
+                        <p><b>{{ experience.technologies.join(', ') }}</b></p>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</mat-card>
+
+<mat-card class="home-setup-card mat-elevation-z5">
+    <mat-card-title>
+        <h2>Personal Machine Setup</h2>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <p>In case you were wondering</p>
+    </mat-card-subtitle>
+    <mat-card-content>
+        <p><b>Operating System:</b> {{ about.laptopSetup.operatingSystem }}</p>
+        <p><b>Text Editor I love:</b> {{ about.laptopSetup.textEditor }}</p>
+        <p><b>IDE's I love:</b> {{ about.laptopSetup.IDE }}</p>
+        <p><b>Desktop Environment:</b> {{ about.laptopSetup.desktopEnvironment }}</p>
+    </mat-card-content>
+</mat-card>
 
 <div class="projects">
     <mat-card class="project mat-elevation-z5">
@@ -40,87 +135,6 @@
                 </mat-card-content>
             </mat-card>
         </div>
-    </mat-card>
-
-    <mat-card class="my-story mat-elevation-z5">
-        <mat-card-title>
-            <h2>Skills</h2>
-        </mat-card-title>
-
-
-        <div class="skills-container">
-            <mat-card class="skill-card mat-elevation-z5">
-                <mat-card-title>
-                    <h2>Front-End Skills</h2>
-                </mat-card-title>
-                <mat-card-content>
-                    <p class="skills" *ngFor="let skill of about.frontendSkills">{{ skill }}</p>
-                </mat-card-content>
-            </mat-card>
-            <mat-card class="skill-card mat-elevation-z5">
-                <mat-card-title>
-                    <h2>Back-End Skills</h2>
-                </mat-card-title>
-                <mat-card-content>
-                    <p class="skills" *ngFor="let skill of about.backendSkills">{{ skill }}</p>
-                </mat-card-content>
-            </mat-card>
-
-            <mat-card class="skill-card mat-elevation-z5">
-                <mat-card-title>
-                    <h2>Database Skills</h2>
-                </mat-card-title>
-                <mat-card-content>
-                    <p class="skills" *ngFor="let skill of about.databaseSkills">{{ skill }}</p>
-                </mat-card-content>
-            </mat-card>
-
-            <mat-card class="skill-card mat-elevation-z5">
-                <mat-card-title>
-                    <h2>Other Skills</h2>
-                </mat-card-title>
-                <mat-card-content>
-                    <p class="skills" *ngFor="let skill of about.otherSkills">{{ skill }}</p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-    </mat-card>
-
-    <mat-card class="my-work-experience mat-elevation-z5">
-        <mat-card-title>
-            <h2>Work Experience</h2>
-        </mat-card-title>
-
-        <div class="experience-container">
-            <mat-card class="experience-card mat-elevation-z5" *ngFor="let company of about.workExperience">
-                <mat-card-title>
-                    <img src="{{ company.image }}" alt="">
-                    <h3>{{ company.name }}</h3>
-                    <p>{{ company.role }}</p>
-                </mat-card-title>
-                <mat-card-subtitle>
-                    <p>{{ company.date }}</p>
-                </mat-card-subtitle>
-                <mat-card-content>
-                    <p>{{ company.description }}</p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-    </mat-card>
-
-    <mat-card class="home-setup-card mat-elevation-z5">
-        <mat-card-title>
-            <h2>Personal Machine Setup</h2>
-        </mat-card-title>
-        <mat-card-subtitle>
-            <p>In case you were wondering</p>
-        </mat-card-subtitle>
-        <mat-card-content>
-            <p><b>Operating System:</b> {{ about.laptopSetup.operatingSystem }}</p>
-            <p><b>Text Editor I love:</b> {{ about.laptopSetup.textEditor }}</p>
-            <p><b>IDE's I love:</b> {{ about.laptopSetup.IDE }}</p>
-            <p><b>Desktop Environment:</b> {{ about.laptopSetup.desktopEnvironment }}</p>
-        </mat-card-content>
     </mat-card>
 
 </div>
