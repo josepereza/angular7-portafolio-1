@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { MatCardModule } from '@angular/material';
+import { MatCardModule, MatTabsModule } from '@angular/material';
 
 
 @NgModule({
@@ -21,7 +21,8 @@ import { MatCardModule } from '@angular/material';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule
   ],
   providers: [AboutComponent],
   bootstrap: [AppComponent]
