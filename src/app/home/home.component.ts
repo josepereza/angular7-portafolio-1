@@ -52,4 +52,8 @@ export class HomeComponent implements OnInit {
   goToLink(link: string): void {
     window.open(link);
   }
+
+  what(event: any): void {
+    console.log('hi', event);
+  }
 }
