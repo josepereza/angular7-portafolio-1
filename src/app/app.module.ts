@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { MatCardModule, MatTabsModule } from '@angular/material';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatCardModule, MatTabsModule } from '@angular/material';
     BrowserAnimationsModule,
     AppRoutingModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [AboutComponent],
   bootstrap: [AppComponent]

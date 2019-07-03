@@ -1,4 +1,4 @@
-<div class="top-row">
+<div class="top-row hide-on-init" animateOnScroll animationName="animated fadeIn">
   <div class="contact-button">
     <button class="btn btn-outline-primary button-responsive" routerLink="/contact">Let's talk</button>
   </div>
@@ -9,7 +9,7 @@
   <p style="font-size: 30px" id="deliverables"></p>
 </div>
 
-<div class="introduction" style="z-index: 0">
+<div class="introduction hide-on-init" style="z-index: 0" animateOnScroll animationName="animated fadeIn">
   <div class="text-center"
     style="margin-top: 5%; padding-top: 5%; padding-bottom: 5%;margin-left: 2%; margin-right: 2%">
     <p style="font-size: 30px">I'm<br><b>{{ about.about.name }}</b></p>
@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<mat-card class="my-story mat-elevation-z5" style="z-index: 1; margin-top: -15%">
+<mat-card class="my-story mat-elevation-z5 hide-on-init" style="z-index: 1; margin-top: -15%" animateOnScroll animationName="animated fadeIn">
   <mat-card-title>
     <h2>Skills</h2>
   </mat-card-title>
@@ -64,7 +64,7 @@
 
 
 
-<div class="introduction">
+<div class="introduction hide-on-init" animateOnScroll animationName="animated fadeIn">
   <div class="text-center" style="margin-top: 3%">
     <h2 class="heading" style="padding-top: 3%">Work Experience</h2>
   </div>
@@ -73,7 +73,7 @@
   </div>
 </div>
 
-<mat-card class="experience-container d-flex flex-column mat-elevation-z5" style="z-index: 1; margin-top: -10%">
+<mat-card class="experience-container d-flex flex-column mat-elevation-z5 hide-on-init" style="z-index: 1; margin-top: -10%" animateOnScroll animationName="animated fadeIn">
   <mat-tab-group mat-stretch-tabs>
     <mat-tab *ngFor="let experience of about.workExperience" label="{{ experience.name}}">
 
@@ -122,7 +122,7 @@
 </mat-card>
 
 
-<div class="projects">
+<div class="projects hide-on-init" animateOnScroll animationName="animated fadeIn">
   <mat-card class="project mat-elevation-z5">
     <mat-card-title>
       <h2>Projects</h2>
@@ -147,7 +147,7 @@
 
 </div>
 
-<mat-card class="home-setup-card mat-elevation-z5">
+<mat-card class="home-setup-card mat-elevation-z5 hide-on-init" animateOnScroll animationName="animated fadeIn">
   <mat-card-title>
     <h2>Personal Machine Setup</h2>
   </mat-card-title>

@@ -216,3 +216,10 @@
 .title {
   font-weight: bold;
 }
+
+.animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
+}

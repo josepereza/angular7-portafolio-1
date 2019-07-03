@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   subscription: Subscription;
 
-  isTitleTyped = false;
+  typeComplete = false;
 
   projects: any = [
     {
@@ -88,6 +88,9 @@ export class HomeComponent implements OnInit {
       waitUntilVisible: true,
       lifeLike: true,
       cursorChar: '_',
+      afterComplete: (instance) => {
+        this.typeComplete = true;
+      }
     })
       .type('I create ')
       .pause(500)
