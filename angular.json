@@ -31,7 +31,9 @@
               "node_modules/roboto-fontface/css/roboto/sass/roboto-fontface.scss",
               "src/styles.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/typeit/dist/typeit.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
