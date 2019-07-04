@@ -82,3 +82,10 @@
     width: auto;
   }
 }
+
+.animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
+}
