@@ -223,3 +223,16 @@
 .hide-on-init {
     visibility: hidden;
 }
+
+
+.resume-button  {
+  margin-right: 15%;
+  margin-top: 1%;
+  border-radius: 30px;
+  width: auto;
+  @media screen and (max-width: 800px) {
+    margin-right: auto;
+    width: auto;
+  }
+
+}

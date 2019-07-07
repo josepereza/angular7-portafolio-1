@@ -2,6 +2,11 @@
   <div class="contact-button">
     <button class="btn btn-outline-primary button-responsive" routerLink="/contact">Let's talk</button>
   </div>
+  <div class="contact-button">
+    <a href="assets/downloads/shehriyarQureshi.pdf" download="">
+    <button class="btn btn-outline-primary resume-button">Download Resume</button>
+    </a>
+  </div>
 </div>
 
 <div class="text-center">
@@ -18,7 +23,8 @@
   </div>
 </div>
 
-<mat-card class="my-story mat-elevation-z5 hide-on-init" style="z-index: 1; margin-top: -15%" animateOnScroll animationName="animated bounceInUp">
+<mat-card class="my-story mat-elevation-z5 hide-on-init" style="z-index: 1; margin-top: -15%" animateOnScroll
+  animationName="animated bounceInUp">
   <mat-card-title>
     <h2>Skills</h2>
   </mat-card-title>
@@ -73,7 +79,8 @@
   </div>
 </div>
 
-<mat-card class="experience-container d-flex flex-column mat-elevation-z5 hide-on-init" style="z-index: 1; margin-top: -10%" animateOnScroll animationName="animated fadeInUp">
+<mat-card class="experience-container d-flex flex-column mat-elevation-z5 hide-on-init"
+  style="z-index: 1; margin-top: -10%" animateOnScroll animationName="animated fadeInUp">
   <mat-tab-group mat-stretch-tabs>
     <mat-tab *ngFor="let experience of about.workExperience" label="{{ experience.name}}">
 
