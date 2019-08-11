@@ -10,6 +10,7 @@ export class AboutComponent implements OnInit {
   about: any = {
     "name": "Muhammad Shehriyar Qureshi",
     "status": "Full Stack Software Engineer",
+    deliverables: 'I develop Software.',
     "workPreference":
       `
     I love work, but only if you allow me to come to work wearing a trouser and

@@ -56,57 +56,10 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.typeTitle();
-    // this.typeWhatIDo();
   }
 
   goToLink(link: string): void {
     window.open(link);
   }
 
-  what(event: any): void {
-    console.log('hi', event);
-  }
-
-  public typeTitle(): void {
-    const typeTitle = new TypeIt('#title', {
-      strings: this.about.about.status,
-      speed: 70,
-      waitUntilVisible: true,
-      lifeLike: true,
-      cursorChar: '_',
-      afterComplete: (instance) => {
-        this.typeWhatIDo();
-      }
-    }).go();
-
-  }
-
-  public typeWhatIDo(): void {
-    const typeDeliverables = new TypeIt('#deliverables', {
-      speed: 50,
-      waitUntilVisible: true,
-      lifeLike: true,
-      cursorChar: '_',
-      afterComplete: (instance) => {
-        this.typeComplete = true;
-      }
-    })
-      .type('I create ')
-      .pause(500)
-      .type('websites,')
-      .pause(1500)
-      .delete(9)
-      .type('web applications,')
-      .pause(1500)
-      .delete(17)
-      .type('desktop applications,')
-      .pause(1500)
-      .delete(28)
-      .type('develop Software')
-      .pause(500)
-      .type('.');
-
-    typeDeliverables.go();
-  }
 }
